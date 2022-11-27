@@ -11,28 +11,34 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      backgroundColor: Colors.grey[900],
+      appBar: AppBar(
+        elevation: 0,
+        backgroundColor: Colors.transparent,
+        leading: Icon(Icons.menu),
+        actions: [
+          Padding(
+            padding: const EdgeInsets.only(right: 20.0),
+            child: Icon(Icons.person),
+          )
+        ],
+      ),
       bottomNavigationBar: BottomNavigationBar(
         items: [
-        BottomNavigationBarItem(
-        icon: Icon(Icons.home),
-        label: ''),
-        BottomNavigationBarItem(
-        icon: Icon(Icons.favorite),
-        label: ''),
-        BottomNavigationBarItem(
-        icon: Icon(Icons.notifications),
-        label: ''),
-      ],
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: ''),
+          BottomNavigationBarItem(icon: Icon(Icons.favorite), label: ''),
+          BottomNavigationBarItem(icon: Icon(Icons.notifications), label: ''),
+        ],
       ),
-      body: Column(children: [
-        //Find the best coffe for you
+      body: Column(
+        children: [
+          //Find the best coffe for you
 
-       // Search Bar
+          // Search Bar
 
-       // Horizantal listview of coffee tiles
-
-      ],),
+          // Horizantal listview of coffee tiles
+        ],
+      ),
     );
   }
 }
