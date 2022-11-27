@@ -11,13 +11,14 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(),
       body: Column(children: [
         //Find the best coffe for you
 
        // Search Bar
 
        // Horizantal listview of coffee tiles
-       
+
       ],),
     );
   }
