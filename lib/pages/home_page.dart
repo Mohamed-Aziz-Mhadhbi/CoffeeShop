@@ -12,6 +12,19 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
+      bottomNavigationBar: BottomNavigationBar(
+        items: [
+        BottomNavigationBarItem(
+        icon: Icon(Icons.home),
+        label: ''),
+        BottomNavigationBarItem(
+        icon: Icon(Icons.favorite),
+        label: ''),
+        BottomNavigationBarItem(
+        icon: Icon(Icons.notifications),
+        label: ''),
+      ],
+      ),
       body: Column(children: [
         //Find the best coffe for you
 
