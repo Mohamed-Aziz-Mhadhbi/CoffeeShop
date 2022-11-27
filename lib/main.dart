@@ -1,3 +1,4 @@
+import 'package:coffeui/pages/home_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,6 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: HomePage(),
+      theme: ThemeData(brightness: Brightness.dark),
     );
   }
 }
