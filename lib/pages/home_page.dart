@@ -97,27 +97,7 @@ class _HomePageState extends State<HomePage> {
           // Horizantal listview of coffee
           Container(
             height: 50,
-            child: ListView(
-              scrollDirection: Axis.horizontal,
-              // ignore: prefer_const_literals_to_create_immutables
-              children: [
-                CoffeeType(
-                  coffeeType: "Cappuccino",
-                  isSelected: true,
-                  onTap: coffeeTypesSelected,
-                ),
-                CoffeeType(
-                  coffeeType: "Espresso",
-                  isSelected: false,
-                  onTap: coffeeTypesSelected,
-                ),
-                CoffeeType(
-                  coffeeType: "Latte",
-                  isSelected: false,
-                  onTap: coffeeTypesSelected,
-                ),
-              ],
-            ),
+            child: ListView.builder(itemBuilder: itemBuilder)
           ),
 
           // Horizantal listview of coffee tiles
