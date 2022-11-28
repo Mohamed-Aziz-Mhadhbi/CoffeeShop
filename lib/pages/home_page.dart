@@ -40,6 +40,7 @@ class _HomePageState extends State<HomePage> {
               style: TextStyle(fontSize: 36),
             ),
           ),
+
           SizedBox(
             height: 25,
           ),
@@ -59,9 +60,27 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
             ),
-          )
+          ),
+
+          SizedBox(
+            height: 25,
+          ),
 
           // Horizantal listview of coffee tiles
+          Expanded(
+            child: ListView(
+              scrollDirection: Axis.horizontal,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Container(
+                    width: 200,
+                    color: Colors.grey,
+                  ),
+                )
+              ],
+            ),
+          ),
         ],
       ),
     );
