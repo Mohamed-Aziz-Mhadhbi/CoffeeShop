@@ -12,13 +12,29 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+// list of coffe types
+  final List coffeeType = [
+    // [coffee type, isSelected]
+    [
+      'Cappucino',
+      true,
+    ],
+    [
+      'Espresso',
+      false,
+    ],
+    [
+      'Latte',
+      false,
+    ],
+    [
+      'Black',
+      false,
+    ],
+  ];
 
 // user tapped on coffe types
-
-void coffeeTypesSelected (){
-
-}
-
+  void coffeeTypesSelected() {}
 
   @override
   Widget build(BuildContext context) {
