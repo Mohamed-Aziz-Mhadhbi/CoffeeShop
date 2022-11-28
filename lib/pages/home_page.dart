@@ -16,7 +16,7 @@ class _HomePageState extends State<HomePage> {
   final List coffeeType = [
     // [coffee type, isSelected]
     [
-      'Cappucino',
+      'Latte',
       true,
     ],
     [
@@ -24,7 +24,7 @@ class _HomePageState extends State<HomePage> {
       false,
     ],
     [
-      'Latte',
+      'Cappucino',
       false,
     ],
     [
@@ -34,7 +34,13 @@ class _HomePageState extends State<HomePage> {
   ];
 
 // user tapped on coffe types
-  void coffeeTypesSelected() {}
+  void coffeeTypesSelected(int index) {
+    setState(() {
+
+    //this for loop makes every selection flase
+    coffeeType[index][1] = true;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -97,7 +103,19 @@ class _HomePageState extends State<HomePage> {
           // Horizantal listview of coffee
           Container(
             height: 50,
-            child: ListView.builder(itemBuilder: itemBuilder)
+            child: ListView.builder(
+              scrollDirection: Axis.horizontal,
+              itemCount: coffeeType.length,
+              itemBuilder: ((context, index) {
+                return CoffeeType(
+                  coffeeType: coffeeType[index][0],
+                  isSelected: coffeeType[index][1],
+                  onTap: () {
+                    coffeeTypesSelected(index);
+                  },
+                );
+              }),
+            ),
           ),
 
           // Horizantal listview of coffee tiles
