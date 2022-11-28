@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 
 class CoffeeType extends StatelessWidget {
   final String coffeeType;
+  final bool isSelected;
 
   CoffeeType({
     required this.coffeeType,
+    required this.isSelected,
   });
 
   @override
@@ -17,7 +19,7 @@ class CoffeeType extends StatelessWidget {
         style: TextStyle(
           fontSize: 18,
           fontWeight: FontWeight.bold,
-          color: Colors.orange,
+          color: isSelected ? Colors.orange : Colors.white,
         ),
       ),
     );

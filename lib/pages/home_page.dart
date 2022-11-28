@@ -77,9 +77,18 @@ class _HomePageState extends State<HomePage> {
               scrollDirection: Axis.horizontal,
               // ignore: prefer_const_literals_to_create_immutables
               children: [
-                CoffeeType(coffeeType: "Cappuccino"),
-                CoffeeType(coffeeType: "Espresso"),
-                CoffeeType(coffeeType: "Latte"),
+                CoffeeType(
+                  coffeeType: "Cappuccino",
+                  isSelected: true,
+                ),
+                CoffeeType(
+                  coffeeType: "Espresso",
+                  isSelected: false,
+                ),
+                CoffeeType(
+                  coffeeType: "Latte",
+                  isSelected: false,
+                ),
               ],
             ),
           ),
