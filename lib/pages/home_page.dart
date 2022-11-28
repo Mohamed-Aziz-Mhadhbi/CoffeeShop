@@ -40,16 +40,27 @@ class _HomePageState extends State<HomePage> {
               style: TextStyle(fontSize: 36),
             ),
           ),
-          SizedBox(height: 25,),
+          SizedBox(
+            height: 25,
+          ),
 
           // Search Bar
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 25.0),
             child: TextField(
-               
+              decoration: InputDecoration(
+                prefixIcon: Icon(Icons.search),
+                hintText: "Find your coffee...",
+                focusedBorder: OutlineInputBorder(
+                  borderSide: BorderSide(color: Colors.grey.shade600),
+                ),
+                enabledBorder: OutlineInputBorder(
+                  borderSide: BorderSide(color: Colors.grey.shade600),
+                ),
+              ),
             ),
           )
-          
+
           // Horizantal listview of coffee tiles
         ],
       ),
