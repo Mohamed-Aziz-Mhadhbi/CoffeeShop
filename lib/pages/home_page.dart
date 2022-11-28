@@ -33,9 +33,23 @@ class _HomePageState extends State<HomePage> {
       body: Column(
         children: [
           //Find the best coffe for you
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 25.0),
+            child: Text(
+              "Find the best coffee for you",
+              style: TextStyle(fontSize: 36),
+            ),
+          ),
+          SizedBox(height: 25,),
 
           // Search Bar
-
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 25.0),
+            child: TextField(
+              
+            ),
+          )
+          
           // Horizantal listview of coffee tiles
         ],
       ),
