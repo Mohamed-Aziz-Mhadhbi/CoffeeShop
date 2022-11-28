@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, avoid_unnecessary_containers
 
 import 'package:flutter/material.dart';
 
@@ -45,7 +45,26 @@ class CoffeeTile extends StatelessWidget {
                   ),
                 ],
               ),
-            )
+            ),
+
+            // price
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 25.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                // ignore: prefer_const_literals_to_create_immutables
+                children: [
+                  Text('\$4.00'),
+                  Container(
+                      padding: EdgeInsets.all(4),
+                      decoration: BoxDecoration(
+                        color: Colors.orange,
+                        borderRadius: BorderRadius.circular(6),
+                      ),
+                      child: Icon(Icons.add)),
+                ],
+              ),
+            ),
           ],
         ),
       ),
