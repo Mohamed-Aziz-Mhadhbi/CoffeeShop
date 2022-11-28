@@ -6,10 +6,14 @@ class CoffeeTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(8.0),
+      padding: const EdgeInsets.only(left: 25.0, bottom: 25),
       child: Container(
         width: 200,
-        color: Colors.grey,
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(12),
+          color: Colors.black54,
+        ),
+        child: Image.asset('lib/images/'),
       ),
     );
   }
