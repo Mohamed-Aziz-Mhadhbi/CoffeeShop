@@ -54,7 +54,7 @@ class CoffeeTile extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 // ignore: prefer_const_literals_to_create_immutables
                 children: [
-                  Text('\$4.00'),
+                  Text('4 DT'),
                   Container(
                       padding: EdgeInsets.all(4),
                       decoration: BoxDecoration(

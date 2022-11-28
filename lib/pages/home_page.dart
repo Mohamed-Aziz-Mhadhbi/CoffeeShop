@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:coffeui/util/coffee_tile.dart';
 import 'package:coffeui/util/coffee_types.dart';
@@ -36,9 +36,11 @@ class _HomePageState extends State<HomePage> {
 // user tapped on coffe types
   void coffeeTypesSelected(int index) {
     setState(() {
-
-    //this for loop makes every selection flase
-    coffeeType[index][1] = true;
+      //this for loop makes every selection flase
+      for (int i = 0; i < coffeeType.length; i++) {
+        coffeeType[i][1] = false;
+      }
+      coffeeType[index][1] = true;
     });
   }
 
@@ -59,9 +61,18 @@ class _HomePageState extends State<HomePage> {
       ),
       bottomNavigationBar: BottomNavigationBar(
         items: [
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: ''),
-          BottomNavigationBarItem(icon: Icon(Icons.favorite), label: ''),
-          BottomNavigationBarItem(icon: Icon(Icons.notifications), label: ''),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            label: '',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.favorite),
+            label: '',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.notifications),
+            label: '',
+          ),
         ],
       ),
       body: Column(
@@ -122,7 +133,6 @@ class _HomePageState extends State<HomePage> {
           Expanded(
             child: ListView(
               scrollDirection: Axis.horizontal,
-              // ignore: prefer_const_literals_to_create_immutables
               children: [
                 CoffeeTile(),
               ],
