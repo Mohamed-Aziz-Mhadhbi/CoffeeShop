@@ -9,6 +9,17 @@ class CoffeeType extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(coffeeType);
+    return Padding(
+      padding: const EdgeInsets.only(left: 25.0),
+      child: Text(
+        coffeeType,
+        // ignore: prefer_const_constructors
+        style: TextStyle(
+          fontSize: 18,
+          fontWeight: FontWeight.bold,
+          color: Colors.orange,
+        ),
+      ),
+    );
   }
 }
