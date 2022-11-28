@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:coffeui/util/coffee_tile.dart';
+import 'package:coffeui/util/coffee_types.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -76,11 +77,9 @@ class _HomePageState extends State<HomePage> {
               scrollDirection: Axis.horizontal,
               // ignore: prefer_const_literals_to_create_immutables
               children: [
-                Text("Cappuccino"),
-                Text("Espresso"),
-                Text("Latte"),
-                Text("Flat "),
-                Text(""),
+                CoffeeType(coffeeType: "Cappuccino"),
+                CoffeeType(coffeeType: "Espresso"),
+                CoffeeType(coffeeType: "Latte"),
               ],
             ),
           ),
