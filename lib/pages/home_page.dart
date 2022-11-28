@@ -12,6 +12,14 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+
+// user tapped on coffe types
+
+void coffeeTypesSelected (){
+
+}
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -80,14 +88,17 @@ class _HomePageState extends State<HomePage> {
                 CoffeeType(
                   coffeeType: "Cappuccino",
                   isSelected: true,
+                  onTap: coffeeTypesSelected,
                 ),
                 CoffeeType(
                   coffeeType: "Espresso",
                   isSelected: false,
+                  onTap: coffeeTypesSelected,
                 ),
                 CoffeeType(
                   coffeeType: "Latte",
                   isSelected: false,
+                  onTap: coffeeTypesSelected,
                 ),
               ],
             ),
