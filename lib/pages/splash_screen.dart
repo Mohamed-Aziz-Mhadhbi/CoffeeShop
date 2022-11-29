@@ -45,7 +45,7 @@ class _SplashScreenState extends State<SplashScreen> {
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             Image.asset(
-              'lib/images/',
+              'lib/images/6746675-removebg-preview.png',
               height: 300.0,
               width: 300.0,
             )
