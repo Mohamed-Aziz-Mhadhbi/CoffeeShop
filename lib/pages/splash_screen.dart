@@ -11,7 +11,7 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
-  @override
+ /* @override
   void initState() {
     super.initState();
     Timer(
@@ -23,7 +23,7 @@ class _SplashScreenState extends State<SplashScreen> {
             ),
           )),
     );
-  }
+  }*/
 
   @override
   Widget build(BuildContext context) {
@@ -36,8 +36,8 @@ class _SplashScreenState extends State<SplashScreen> {
               begin: Alignment.topRight,
               end: Alignment.bottomRight,
               colors: [
-                Color(0xffff8000),
-                Color(0xffce1010),
+                Color.fromARGB(255, 253, 216, 167),
+                Color.fromARGB(255, 255, 255, 255),
               ]),
         ),
         child: Column(
@@ -45,9 +45,8 @@ class _SplashScreenState extends State<SplashScreen> {
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             Image.asset(
-              'lib/images/6746675-removebg-preview.png',
-              height: 300.0,
-              width: 300.0,
+              'lib/images/splashScreen-removebg-preview.png',
+             
             )
           ],
         ),
