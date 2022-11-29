@@ -1,9 +1,19 @@
-// ignore_for_file: prefer_const_constructors, avoid_unnecessary_containers
+// ignore_for_file: prefer_const_constructors, avoid_unnecessary_containers, use_key_in_widget_constructors, prefer_const_constructors_in_immutables
 
 import 'package:flutter/material.dart';
 
 class CoffeeTile extends StatelessWidget {
-  const CoffeeTile({super.key});
+  final String coffeImagePath;
+  final String coffeName;
+  final String coffeDescription;
+  final String coffePrice;
+
+  CoffeeTile({
+    required this.coffeImagePath,
+    required this.coffeName,
+    required this.coffeDescription,
+    required this.coffePrice,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +32,7 @@ class CoffeeTile extends StatelessWidget {
             // coffee image
             ClipRRect(
               borderRadius: BorderRadius.circular(12),
-              child: Image.asset('lib/images/latte-coffee-beans-side-view.jpg'),
+              child: Image.asset(coffeImagePath),
             ),
 
             // coffee name
@@ -33,14 +43,14 @@ class CoffeeTile extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    'Latte',
+                    coffeName,
                     style: TextStyle(fontSize: 20),
                   ),
                   SizedBox(
                     height: 4,
                   ),
                   Text(
-                    "With Almond Milk",
+                    coffeDescription,
                     style: TextStyle(color: Colors.grey[700]),
                   ),
                 ],
@@ -54,7 +64,7 @@ class CoffeeTile extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 // ignore: prefer_const_literals_to_create_immutables
                 children: [
-                  Text('4 DT'),
+                  Text(coffePrice),
                   Container(
                       padding: EdgeInsets.all(4),
                       decoration: BoxDecoration(
