@@ -138,7 +138,7 @@ class _HomePageState extends State<HomePage> {
           Expanded(
             child: ListView.builder(itemBuilder: ((context, index) {
               return CoffeeTile(
-                coffeImagePath: coffeImagePath,
+                coffeImagePath: coffeeTileList[index][0],
                 coffeName: coffeName,
                 coffeDescription: coffeDescription,
                 coffePrice: coffePrice,
