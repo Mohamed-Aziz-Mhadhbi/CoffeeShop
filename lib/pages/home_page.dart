@@ -38,7 +38,7 @@ class _HomePageState extends State<HomePage> {
     ],
   ];
 
-  List turck = [
+  List black = [
     [
       'lib/images/latte-with-coffee-beans-table.jpg',
       'Latte',
@@ -171,6 +171,10 @@ class _HomePageState extends State<HomePage> {
                     } else if (coffeeType[index][1] &&
                         coffeeType[index][0] == "Cappucino") {
                       coffeeTileList = cappucino;
+                    }
+                    else if (coffeeType[index][1] &&
+                        coffeeType[index][0] == "Black") {
+                      coffeeTileList = black;
                     }
                   },
                 );
