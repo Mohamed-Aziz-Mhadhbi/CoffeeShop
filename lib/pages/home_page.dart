@@ -140,7 +140,7 @@ class _HomePageState extends State<HomePage> {
               return CoffeeTile(
                 coffeImagePath: coffeeTileList[index][0],
                 coffeName: coffeeTileList[index][1],
-                coffeDescription: coffeDescription,
+                coffeDescription: coffeeTileList[index][2],
                 coffePrice: coffePrice,
               );
             })),
