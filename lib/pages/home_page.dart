@@ -12,10 +12,20 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  List latte = [
+    [
+      'lib/images/latte-with-coffee-beans-table.jpg',
+      'Latte',
+      'With Coffee Beans',
+      '2.5 DT'
+    ],
+  ];
+
+  
+
 // overall coffe summary
   List coffeeTileList = [
     // [ coffeImagePath, coffeName, coffeDescription, coffePrice ]
-    [ 'lib/images/latte-with-coffee-beans-table.jpg', 'Latte', 'With Coffee Beans', '2.5 DT']
   ];
 // list of coffe types
   final List coffeeType = [
@@ -128,6 +138,13 @@ class _HomePageState extends State<HomePage> {
                   isSelected: coffeeType[index][1],
                   onTap: () {
                     coffeeTypesSelected(index);
+                    if (coffeeType[index][1] &&
+                        coffeeType[index][0] == "Latte") {
+                      coffeeTileList = latte;
+                    } else if (coffeeType[index][1] &&
+                        coffeeType[index][0] == "Espresso"){
+                          coffeeTileList = espresso;
+                        }
                   },
                 );
               }),
@@ -140,13 +157,14 @@ class _HomePageState extends State<HomePage> {
               scrollDirection: Axis.horizontal,
               itemCount: coffeeTileList.length,
               itemBuilder: ((context, index) {
-              return CoffeeTile(
-                coffeImagePath: coffeeTileList[index][0],
-                coffeName: coffeeTileList[index][1],
-                coffeDescription: coffeeTileList[index][2],
-                coffePrice: coffeeTileList[index][3],
-              );
-            })),
+                return CoffeeTile(
+                  coffeImagePath: coffeeTileList[index][0],
+                  coffeName: coffeeTileList[index][1],
+                  coffeDescription: coffeeTileList[index][2],
+                  coffePrice: coffeeTileList[index][3],
+                );
+              }),
+            ),
             /* ListView(
               scrollDirection: Axis.horizontal,
               children: [
