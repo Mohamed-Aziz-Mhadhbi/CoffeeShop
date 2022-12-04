@@ -46,7 +46,12 @@ class _SplashScreenState extends State<SplashScreen> {
           children: [
             Image.asset(
               'lib/images/splashScreen-removebg-preview.png',
-             
+            ),
+            Text(
+              "WE DON'T MAKE YOUR COFFEE.WE MAKE YOUR DAY",
+              style: TextStyle(
+                color: Color.fromARGB(255, 93, 53, 0),
+              ),
             )
           ],
         ),
