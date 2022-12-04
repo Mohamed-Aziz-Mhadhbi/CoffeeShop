@@ -45,7 +45,7 @@ class _HomePageState extends State<HomePage> {
 
   final List cappucino = [
     [
-      'lib/images/person-serving-cup-coffee.jpg',
+      'lib/images/photo-1572442388796-11668a67e53d.jpg',
       'cappucino',
       'cappucino coffee',
       '3 DT',
