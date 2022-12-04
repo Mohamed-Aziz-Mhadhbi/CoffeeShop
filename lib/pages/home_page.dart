@@ -13,7 +13,9 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
 // overall coffe summary
-
+ List coffeeTileList = [
+  
+ ]
 // list of coffe types
   final List coffeeType = [
     // [coffee type, isSelected]
