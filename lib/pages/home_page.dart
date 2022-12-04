@@ -12,7 +12,8 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  List latte = [
+  final List latte = [
+    // [ coffeImagePath, coffeName, coffeDescription, coffePrice ]
     [
       'lib/images/latte-with-coffee-beans-table.jpg',
       'Latte Beans',
@@ -33,21 +34,35 @@ class _HomePageState extends State<HomePage> {
     ],
   ];
 
-  List espresso = [
-    ['', '', '', ''],
-  ];
-  List cappucino = [
-    ['', '', '', ''],
+  final List espresso = [
+    [
+      'lib/images/person-serving-cup-coffee-with-metal-jug.jpg',
+      'espresso',
+      'espresso coffee',
+      '2 DT'
+    ],
   ];
 
-  List black = [
-    ['', '', '', ''],
+  final List cappucino = [
+    [
+      'lib/images/person-serving-cup-coffee.jpg',
+      'cappucino',
+      'cappucino coffee',
+      '3 DT',
+    ],
+  ];
+
+  final List black = [
+    [
+      'lib/images/morning-with-turkish-coffee-brewing.jpg',
+      'Turck',
+      'Turkish Coffee',
+      '3 DT'
+    ],
   ];
 
 // overall coffe summary
-  List coffeeTileList = [
-    // [ coffeImagePath, coffeName, coffeDescription, coffePrice ]
-  ];
+  late List coffeeTileList = latte;
 // list of coffe types
   final List coffeeType = [
     // [coffee type, isSelected]
