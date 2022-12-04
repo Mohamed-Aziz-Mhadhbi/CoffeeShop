@@ -12,6 +12,8 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+// overall coffe summary
+
 // list of coffe types
   final List coffeeType = [
     // [coffee type, isSelected]
@@ -130,10 +132,15 @@ class _HomePageState extends State<HomePage> {
           ),
 
           // Horizantal listview of coffee tiles
-          Expanded(child: ListView.builder(itemBuilder: ((context, index) {
-            return CoffeeTile(coffeImagePath: coffeImagePath, coffeName: coffeName, coffeDescription: coffeDescription, coffePrice: coffePrice);
-          }))
-              /* ListView(
+          Expanded(
+            child: ListView.builder(itemBuilder: ((context, index) {
+              return CoffeeTile(
+                  coffeImagePath: coffeImagePath,
+                  coffeName: coffeName,
+                  coffeDescription: coffeDescription,
+                  coffePrice: coffePrice);
+            })),
+            /* ListView(
               scrollDirection: Axis.horizontal,
               children: [
                 CoffeeTile(
@@ -157,7 +164,7 @@ class _HomePageState extends State<HomePage> {
               ],
             ),
           */
-              ),
+          ),
         ],
       ),
     );
