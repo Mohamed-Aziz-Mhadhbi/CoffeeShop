@@ -15,7 +15,7 @@ class _HomePageState extends State<HomePage> {
 // overall coffe summary
   List coffeeTileList = [
     // [ coffeImagePath, coffeName, coffeDescription, coffePrice ]
-    [ 'lib/images/latte-with-coffee-beans-table.jpg', '', '', '']
+    [ 'lib/images/latte-with-coffee-beans-table.jpg', 'Latte', '', '']
   ];
 // list of coffe types
   final List coffeeType = [
