@@ -34,14 +34,14 @@ class _HomePageState extends State<HomePage> {
   ];
 
   List espresso = [
-    [],
+    ['', '', '', ''],
   ];
   List cappucino = [
-    [],
+    ['', '', '', ''],
   ];
 
   List black = [
-    [],
+    ['', '', '', ''],
   ];
 
 // overall coffe summary
@@ -184,7 +184,6 @@ class _HomePageState extends State<HomePage> {
               scrollDirection: Axis.horizontal,
               itemCount: coffeeTileList.length,
               itemBuilder: ((context, index) {
-                coffeeTileList = latte;
                 return CoffeeTile(
                   coffeImagePath: coffeeTileList[index][0],
                   coffeName: coffeeTileList[index][1],
