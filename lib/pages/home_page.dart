@@ -137,6 +137,7 @@ class _HomePageState extends State<HomePage> {
           // Horizantal listview of coffee tiles
           Expanded(
             child: ListView.builder(
+              scrollDirection: Axis.horizontal,
               itemCount: coffeeTileList.length,
               itemBuilder: ((context, index) {
               return CoffeeTile(
