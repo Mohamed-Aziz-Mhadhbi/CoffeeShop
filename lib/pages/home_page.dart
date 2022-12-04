@@ -14,7 +14,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
 // overall coffe summary
  List coffeeTileList = [
-  
+  // [ coffeImagePath, coffeName, coffeDescription, coffePrice ]
  ]
 // list of coffe types
   final List coffeeType = [
@@ -140,7 +140,7 @@ class _HomePageState extends State<HomePage> {
                   coffeImagePath: coffeImagePath,
                   coffeName: coffeName,
                   coffeDescription: coffeDescription,
-                  coffePrice: coffePrice);
+                  coffePrice: coffePrice,);
             })),
             /* ListView(
               scrollDirection: Axis.horizontal,
