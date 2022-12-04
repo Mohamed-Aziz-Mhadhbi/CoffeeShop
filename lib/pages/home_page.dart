@@ -15,19 +15,19 @@ class _HomePageState extends State<HomePage> {
   List latte = [
     [
       'lib/images/latte-with-coffee-beans-table.jpg',
-      'Latte',
+      'Latte Beans',
       'With Coffee Beans',
       '2.5 DT'
     ],
     [
       'lib/images/latte-coffee-beans-side-view.jpg',
-      'Latte',
+      'Latte Almond',
       'With Almond Milk',
       '3 DT'
     ],
     [
       'lib/images/coffee-milk-latte-with-strawberry-slices.jpg',
-      'Latte',
+      'Latte Strawberry',
       'With strawberry slices',
       '4 DT'
     ],
