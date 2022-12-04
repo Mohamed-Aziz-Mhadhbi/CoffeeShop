@@ -29,6 +29,15 @@ class _HomePageState extends State<HomePage> {
       '4 DT'
     ],
   ];
+   List cappucino = [
+    [
+      'lib/images/latte-with-coffee-beans-table.jpg',
+      'Latte',
+      'With Coffee Beans',
+      '1 DT'
+    ],
+  ];
+
 
  
 
