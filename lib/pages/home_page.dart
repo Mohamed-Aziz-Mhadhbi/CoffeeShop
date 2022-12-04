@@ -166,10 +166,7 @@ class _HomePageState extends State<HomePage> {
                     if (coffeeType[index][1] &&
                         coffeeType[index][0] == "Latte") {
                       coffeeTileList = latte;
-                    } else if (coffeeType[index][1] &&
-                        coffeeType[index][0] == "Espresso"){
-                          coffeeTileList = latte;
-                        }
+                    }
                   },
                 );
               }),
