@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:html';
 
 import 'package:coffeui/pages/home_page.dart';
 import 'package:flutter/material.dart';
@@ -11,7 +12,7 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
-  @override
+ /* @override
   void initState() {
     super.initState();
     Timer(
@@ -23,7 +24,7 @@ class _SplashScreenState extends State<SplashScreen> {
             ),
           )),
     );
-  }
+  }*/
 
   @override
   Widget build(BuildContext context) {
@@ -45,14 +46,15 @@ class _SplashScreenState extends State<SplashScreen> {
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             Image.asset(
-              'lib/images/splashScreen-removebg-preview.png',
-            ),
+                // 'lib/images/splashScreen-removebg-preview.png',
+                'lib/images/coffeeshoplogo-removebg-preview.png'),
             Text(
               "WE DON'T MAKE YOUR COFFEE.WE MAKE YOUR DAY",
               style: TextStyle(
                 color: Color.fromARGB(255, 93, 53, 0),
+                fontSize: 25,
               ),
-            )
+            ),
           ],
         ),
       ),

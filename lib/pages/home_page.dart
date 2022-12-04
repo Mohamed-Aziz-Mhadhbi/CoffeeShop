@@ -55,7 +55,7 @@ class _HomePageState extends State<HomePage> {
   final List black = [
     [
       'lib/images/morning-with-turkish-coffee-brewing.jpg',
-      'Turck',
+      'Turkish',
       'Turkish Coffee',
       '3 DT'
     ],
