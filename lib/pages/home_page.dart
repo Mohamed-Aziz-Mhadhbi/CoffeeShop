@@ -21,7 +21,16 @@ class _HomePageState extends State<HomePage> {
     ],
   ];
 
-  
+  List espresso = [
+    [
+      'lib/images/latte-with-coffee-beans-table.jpg',
+      'Latte',
+      'With Coffee Beans',
+      '4 DT'
+    ],
+  ];
+
+ 
 
 // overall coffe summary
   List coffeeTileList = [
@@ -143,7 +152,7 @@ class _HomePageState extends State<HomePage> {
                       coffeeTileList = latte;
                     } else if (coffeeType[index][1] &&
                         coffeeType[index][0] == "Espresso"){
-                          coffeeTileList = espresso;
+                          coffeeTileList = latte;
                         }
                   },
                 );
