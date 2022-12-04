@@ -19,32 +19,29 @@ class _HomePageState extends State<HomePage> {
       'With Coffee Beans',
       '2.5 DT'
     ],
-  ];
-
-  List espresso = [
     [
-      'lib/images/latte-with-coffee-beans-table.jpg',
+      'lib/images/latte-coffee-beans-side-view.jpg',
       'Latte',
-      'With Coffee Beans',
+      'With Almond Milk',
+      '3 DT'
+    ],
+    [
+      'lib/images/coffee-milk-latte-with-strawberry-slices.jpg',
+      'Latte',
+      'With strawberry slices',
       '4 DT'
     ],
   ];
+
+  List espresso = [
+    [],
+  ];
   List cappucino = [
-    [
-      'lib/images/latte-with-coffee-beans-table.jpg',
-      'Latte',
-      'With Coffee Beans',
-      '1 DT'
-    ],
+    [],
   ];
 
   List black = [
-    [
-      'lib/images/latte-with-coffee-beans-table.jpg',
-      'Latte',
-      'With Coffee Beans',
-      '3 DT'
-    ],
+    [],
   ];
 
 // overall coffe summary
@@ -171,8 +168,7 @@ class _HomePageState extends State<HomePage> {
                     } else if (coffeeType[index][1] &&
                         coffeeType[index][0] == "Cappucino") {
                       coffeeTileList = cappucino;
-                    }
-                    else if (coffeeType[index][1] &&
+                    } else if (coffeeType[index][1] &&
                         coffeeType[index][0] == "Black") {
                       coffeeTileList = black;
                     }
@@ -188,6 +184,7 @@ class _HomePageState extends State<HomePage> {
               scrollDirection: Axis.horizontal,
               itemCount: coffeeTileList.length,
               itemBuilder: ((context, index) {
+                coffeeTileList = latte;
                 return CoffeeTile(
                   coffeImagePath: coffeeTileList[index][0],
                   coffeName: coffeeTileList[index][1],
@@ -196,30 +193,6 @@ class _HomePageState extends State<HomePage> {
                 );
               }),
             ),
-            /* ListView(
-              scrollDirection: Axis.horizontal,
-              children: [
-                CoffeeTile(
-                  coffeImagePath: 'lib/images/latte-with-coffee-beans-table.jpg',
-                  coffeName: 'Latte',
-                  coffeDescription: 'With Coffee Beans',
-                  coffePrice: '2.5 DT',
-                ),
-                CoffeeTile(
-                  coffeImagePath: 'lib/images/latte-coffee-beans-side-view.jpg',
-                  coffeName: 'Latte',
-                  coffeDescription: 'With Almond Milk',
-                  coffePrice: '3 DT',
-                ),
-                CoffeeTile(
-                  coffeImagePath: 'lib/images/coffee-milk-latte-with-strawberry-slices.jpg',
-                  coffeName: 'Latte',
-                  coffeDescription: 'With strawberry slices',
-                  coffePrice: '4 DT',
-                ),
-              ],
-            ),
-          */
           ),
         ],
       ),
