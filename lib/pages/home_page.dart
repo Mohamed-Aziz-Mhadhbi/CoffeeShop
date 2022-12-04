@@ -141,7 +141,7 @@ class _HomePageState extends State<HomePage> {
                 coffeImagePath: coffeeTileList[index][0],
                 coffeName: coffeeTileList[index][1],
                 coffeDescription: coffeeTileList[index][2],
-                coffePrice: coffePrice,
+                coffePrice: coffeeTileList[index][3],
               );
             })),
             /* ListView(
