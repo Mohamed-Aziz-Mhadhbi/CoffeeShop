@@ -136,7 +136,9 @@ class _HomePageState extends State<HomePage> {
 
           // Horizantal listview of coffee tiles
           Expanded(
-            child: ListView.builder(itemBuilder: ((context, index) {
+            child: ListView.builder(
+              itemCount: coffeeTileList.length,
+              itemBuilder: ((context, index) {
               return CoffeeTile(
                 coffeImagePath: coffeeTileList[index][0],
                 coffeName: coffeeTileList[index][1],
